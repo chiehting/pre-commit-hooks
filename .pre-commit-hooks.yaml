@@ -1,0 +1,5 @@
+-   id: check-sops-encrypted
+    name: check sops encrypted
+    description: trims trailing whitespace.
+    entry: Ensure that secret are encrypted.
+    language: python

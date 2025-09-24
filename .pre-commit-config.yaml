@@ -1,0 +1,10 @@
+repos:
+-   repo: https://github.com/chiehting/pre-commit-hooks
+    rev: v0.1.0
+    hooks:
+    -   id: check-sops-encrypted
+        name: check sops encrypted
+        description: Ensure that secret are encrypted.
+        entry: check-sops-encrypted
+        language: python
+        files: 'deploy\/.*(configmap|values)\.yaml'
